@@ -1,0 +1,824 @@
+*{
+    margin:0;
+    padding:0;
+}
+.workspace{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-around;
+    align-items: center;
+}
+nav img {
+    width: 100px;
+    
+
+
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position :relative;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:20px;
+    font-family: sans-serif;
+}
+
+.nav-links ul li::after{
+    content:"";
+    width:0%;
+    height:2px;
+    background: greenyellow;
+    display : block;
+    margin:auto;
+    transition: 1s;
+} 
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.nav-links ul ul{
+    position: absolute;
+    top: 35px;
+    display: none;
+}
+.nav-links ul li:hover > ul{
+    display: block;
+}
+.nav-links ul ul li{
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+    background-color: black;
+    
+}
+
+.content{
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 100px;
+    
+    color:whitesmoke;
+    font-size:45px;
+
+  
+}
+.btn{
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btn:hover{
+    
+    background-color:gray;
+}
+
+
+
+
+
+i{
+    color:greenyellow
+}
+.name{
+    color:greenyellow;
+}
+
+
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("veg.jpg");
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    padding:0;
+    align-items: center;
+    
+    
+}
+.bmi_heading{
+    text-align: center;
+    padding-top: 15px;
+   
+
+    background-color:greenyellow;
+    
+    color:black;
+    font-size:55px;
+}
+.form{
+    margin: 0 auto; 
+     width:350px;
+     height:250px;
+     font-size: 14px;
+     border-radius : 5px;
+     opacity: initial;
+     
+     border-width: thick;
+     border-width: 200px;
+     
+}
+#butt{
+    margin: 0 auto; 
+}
+.Weight{
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px;
+}
+.Height{
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px;
+
+}
+.BMI{
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px;
+
+}
+#butt{
+    text-align: center;
+    
+    
+
+}
+#Weight{
+    border-radius: 5px;
+    width:200px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+}
+#Height{
+    border-radius: 5px;
+    width:205px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+}
+#BMI{
+    border-radius: 5px;
+    width:225px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+}
+.buttonn{
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  padding: 15px 32px;
+  
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+    
+
+.buttonn:hover{
+    
+    background-color:gray;
+}
+
+
+.container2{
+
+   min-height: 110vh;
+    width: 100%;
+    background-image: url("ideal2.jpg");
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    padding:0;
+    align-items: center;
+    
+}
+.form2{
+    margin: 0 auto; 
+     width:350px;
+     height:250px;
+     font-size: 14px;
+     border-radius : 5px;
+     opacity: initial;
+     margin-top: 70px;
+     
+     border-width: thick;
+     border-width: 200px;
+
+}
+.ideal_weight_heading{
+    text-align: center;
+    padding-top: 10px;
+    background-color:greenyellow;
+    color:black;
+    font-size:55px;
+}
+#ideal_Height{
+    border-radius: 5px;
+    width:200px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+}
+#ideal_weight_id{
+    border-radius: 5px;
+    width:310px;
+    height:30px;
+    margin-top: 15px;
+    background-color:lightyellow;
+    text-align: center;
+
+    
+}
+.ideal_weight_Height{
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px;
+
+}
+.ideal_weight{
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px;
+
+
+}
+#butt2{
+
+text-align: center;
+}
+.buttonn2{
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+.buttonn2:hover{
+    background-color:gray;
+}
+.container3{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("ideal-body-fat-percentage.jpg");
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    padding:0;
+    align-items: center;
+    
+
+}
+.body_fat_percent_men{
+    text-align: center;
+    padding-top: 10px;
+    background-color:greenyellow;
+    color:black;
+    font-size:55px;
+
+
+}
+
+.form3{
+    margin: 0 auto; 
+     width:350px;
+     height:250px;
+     font-size: 14px;
+     border-radius : 5px;
+     opacity: initial;
+     
+     border-width: thick;
+     border-width: 200px;
+
+}
+.abdomen{
+   
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px;
+}
+.Height_fat{
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px;
+}
+.Neck_fat{
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px;
+}
+.fat{
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px;
+}
+#abdomen_id{
+    border-radius: 5px;
+    width:150px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+}
+#Height_fat_id{
+    border-radius: 5px;
+    width:200px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+}
+#Neck_fat_id{
+    border-radius: 5px;
+    width:220px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+}
+#fat_id1{
+    border-radius: 5px;
+    width:140px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+}
+#butt3{
+    text-align: center;
+
+}
+.buttonn3{
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  padding: 15px 32px;
+  
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+
+}
+.buttonn3:hover{
+    background-color:gray;
+
+
+}
+.container4{
+    min-height: 110vh;
+    width: 100%;
+    background-image: url("fat2.jpg");
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    padding:0;
+    align-items: center;
+
+}
+.body_fat_percent_women{
+    text-align: center;
+    padding-top: 15px;
+    background-color:greenyellow;
+    color:black;
+    font-size:45px;
+}
+.Waist{
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px
+
+}
+.Hip{
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px
+
+
+}
+.Neck{
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px
+
+}
+.Heightf{
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px
+
+}
+.fat{
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px
+
+}
+.form4{
+    margin: 0 auto; 
+     width:350px;
+     height:250px;
+     font-size: 14px;
+     border-radius : 5px;
+     opacity: initial;
+     
+     border-width: thick;
+     border-width: 200px;
+
+}
+#waist_id{
+    border-radius: 5px;
+    width:200px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+
+}
+#hip_id{
+    border-radius: 5px;
+    width:235px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+
+}
+#Neck_id{
+    border-radius: 5px;
+    width:210px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+
+}
+#Heightf_id{
+    border-radius: 5px;
+    width:193px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+
+}
+#fat_female{
+    border-radius: 5px;
+    width:300px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+
+}
+#butt4{
+    text-align: center;
+
+}
+.buttonn4{
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  padding: 15px 32px;
+  
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+
+}
+.buttonn4:hover{
+    background-color:gray;
+
+}
+
+
+
+.containerlast{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("Daily-Calorie-Requirement.jpg");
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    padding:0;
+    align-items: center;
+    
+           
+}
+.coloumns{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    margin-bottom: 60px;
+    margin:5px 0;
+    height:40p;
+}
+
+.coloumn{
+    flex:1;
+    border:1px solid black;
+    margin:2px;
+    padding:10px;
+    opacity:initial;
+    margin-top: 150px;
+    margin-left:25px;
+    margin-right:25px;
+    background-color:black;
+    
+}.one{
+    margin-left: 35px;
+}
+.two{
+    margin-left: 35px;
+
+}
+.three{
+    margin-left: 35px;
+
+}
+.BodyWeight{
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  border-radius: 5px
+
+
+}
+.cg{
+    margin-top: 30px;
+    font-size: 35px;
+    background-color: black;
+  border-color: greenyellow;
+  color:greenyellow;
+  
+  border-radius: 5px}
+
+
+  #buttlast1{
+    
+    background-color: black;
+    border-color: greenyellow;
+    color:greenyellow;
+    padding: 15px 32px;
+    
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    margin-left: 23px;
+  
+  }
+  #buttlast1:hover{
+    background-color:gray;
+
+  }
+  #buttlast2{
+    
+    background-color: black;
+    border-color: greenyellow;
+    color:greenyellow;
+    padding: 15px 32px;
+    
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    margin-left: 23px;
+  
+  }
+  #buttlast2:hover{
+    background-color:gray;
+}
+
+
+  #buttlast3{
+    
+    background-color: black;
+    border-color: greenyellow;
+    color:greenyellow;
+    padding: 15px 32px;
+    
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    margin-left: 23px;
+  
+  }
+  #buttlast3:hover{
+    background-color:gray;
+  }
+  #BodyWeight1{
+    border-radius: 5px;
+    width:193px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+  }
+  #BodyWeight2{
+    border-radius: 5px;
+    width:193px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+
+  }
+  #BodyWeight3{
+    border-radius: 5px;
+    width:193px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+      
+}
+
+    
+
+#CalorieIntake_karan{
+    border-radius: 5px;
+    width:193px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+}
+#CalorieIntake_seri{
+    border-radius: 5px;
+    width:193px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+}
+#CalorieIntake_poda{
+    border-radius: 5px;
+    width:193px;
+    height:30px;
+    background-color:lightyellow;
+    text-align: center;
+
+}
+.weightgain{
+    margin-left:45px;
+}
+.weightloss{
+    margin-left:45px;
+}
+.weightmaintain{
+    margin-left:45px;
+}
+.H{
+    text-align: center;
+    padding-top: 15px;
+    background-color:greenyellow;
+    color:black;
+    font-size:55px;
+   
+}.H2{
+    margin-left: 45px;
+    margin-bottom: 25px;
+    margin-right: 45px;
+    color:greenyellow;
+    font-size:19px;
+
+    
+
+}
+.thalaipu{
+    background-color:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    border-color:whitesmoke;
+    border:50px;
+}
+#karanodaphoto{
+    width:400px;
+}
+.wrapper{
+    min-height: 110vh;
+    width: 100%;
+    background-image:  url("aboutme.jpg");
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    padding:0;
+   text-align: center;
+    
+}
+.aboutkaran{
+    color:yellowgreen;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 75px;
+}
+article img{
+    max-width: 200px;
+    margin-top: 35px;
+    border:5px solid yellowgreen;
+    
+    
+}
+pre{
+    font-size: 17px;
+    background-color: yellowgreen;
+    
+}
+.contactme{
+    min-height: 110vh;
+    width: 100%;
+    background-image:  url("contactme.jpg");
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    padding:0;
+   text-align: center;  
+}
+.contactpannu{
+    color:yellowgreen;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 75px;
+
+}
+.connect{
+    font-size: 50px;
+    margin-top:75px;
+    background-color: greenyellow;
+    
+}
